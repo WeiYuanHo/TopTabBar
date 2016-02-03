@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let test = TopItemView(frame: CGRectMake(0,100,CGRectGetWidth(self.view.bounds),70))
+        self.view.addSubview(test)
+        test.views = [UIView(),UIView()]
+        test.views.append(UIView())
+        test.views.removeAtIndex(0)
     }
 
     override func didReceiveMemoryWarning() {

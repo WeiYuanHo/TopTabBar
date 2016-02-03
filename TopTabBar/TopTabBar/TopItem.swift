@@ -10,16 +10,17 @@ import UIKit
 
 class TopItem: NSObject {
     var size: CGSize!
-    var view: UIView!
+    var normalView: UIView!
+    var selectedView: UIView!
     init(size: CGSize, view: UIView) {
         super.init()
         self.size = size
-        self.view = view
+        self.normalView = view
     }
     
     override init() {
         super.init()
         self.size = CGSizeZero
-        self.view = UIView()
+        self.normalView = UIView()
     }
 }
